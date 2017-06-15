@@ -189,6 +189,16 @@ main {
 	border-bottom: 1px solid #333; 
 }
 
+.pattern{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/pattern.png);
+
+	-moz-box-shadow:    inset 0 0 70vw 10vw #000000;
+  -webkit-box-shadow: inset 0 0 70vw 10vw #000000;
+  box-shadow:         inset 0 0 70vw 10vw #000000;
+}
 
 
 
