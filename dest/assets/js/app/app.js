@@ -173,9 +173,8 @@ var SCENE3D = {
 			self.effect.render(self.scene, self.camera);
 		}, false);
 	}
-};
-// --------------------------------------------------------------------------
-var APP = {
+	// --------------------------------------------------------------------------
+};var APP = {
 	ctx: document.querySelector('.js-main'),
 	__init: function __init() {
 		var _this = this;
@@ -202,9 +201,8 @@ var APP = {
 			}
 		}, false);
 	}
-};
-//docuement load
-document.addEventListener('DOMContentLoaded', function () {
+	//docuement load
+};document.addEventListener('DOMContentLoaded', function () {
 	//
 	APP.__init();
 	//
