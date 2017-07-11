@@ -13,7 +13,7 @@ const gulp = require('gulp'),
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: './dest'
+      baseDir: './docs'
     }
   })
 });
@@ -29,7 +29,7 @@ gulp.task('jade', () =>{
     .pipe(jade({
         pretty: false
     }))
-    .pipe(gulp.dest('dest/'))
+    .pipe(gulp.dest('docs/'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -43,7 +43,7 @@ gulp.task('sass', () => {
           browsers: ['last 2 versions'],
           cascade: false
       }))
-    .pipe(gulp.dest('dest/assets/css'))
+    .pipe(gulp.dest('docs/assets/css'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -51,7 +51,7 @@ gulp.task('sass', () => {
 
 // Clean
 gulp.task('clean', function() {
-  return gulp.src(['dest/assets/css', 'dest/assets/images'], {read: false})
+  return gulp.src(['docs/assets/css', 'docs/assets/images'], {read: false})
     .pipe(clean());
 });
 
@@ -62,7 +62,7 @@ gulp.task('javascript', () =>{
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(gulp.dest('./dest/assets/js/app'))
+        .pipe(gulp.dest('./docs/assets/js/app'))
         .pipe(browserSync.reload({ // Reloading with Browser Sync
           stream: true
         }));
