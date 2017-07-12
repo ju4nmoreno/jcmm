@@ -305,25 +305,42 @@ main {
     opacity: 1;
     font-size: 1.5vw; }
 
-.show__info {
-  width: 3vw;
-  height: 3vw;
-  display: block;
-  position: absolute;
+.showInfo {
+  width: 3.5vw;
+  height: 40px;
   top: 0;
+  left: -3.5vw;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  cursor: pointer;
   background-color: #FFF;
-  left: -3vw;
-  border: 0.5vw solid white;
-  transition: background-color 0.5s; }
-  .show__info:hover {
+  padding: 3px 0 3px 6px;
+  transition: background-color 0.5s, width 0.4s; }
+  .showInfo:hover {
     background-color: #333;
-    transition: background-color 0.5s; }
-  .show__info.active {
+    transition: background-color 0.5s, width 0.6s; }
+  .showInfo.active {
+    width: calc(100% + 3.5vw);
     background-color: #333;
-    transition: background-color 0.5s; }
-    .show__info.active:hover {
+    transition: background-color 0.5s, width 0.6s; }
+    .showInfo.active .showInfo__item {
+      background-color: #999; }
+    .showInfo.active:hover {
       background-color: #fff;
-      transition: background-color 0.5s; }
+      transition: background-color 0.5s, width 0.6s; }
+  .showInfo__item {
+    display: block;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    background-color: #333; }
 
 .wrapper__container {
   width: 80%;
