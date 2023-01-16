@@ -185,21 +185,19 @@ var SCENE3D = {
 				_this.ctx.className = 'js-main main__anima';
 			}, 100);
 			//
-			var btn__showInfo = document.querySelector('.js-btn__showInfo');
+			var btn__showInfo = this.ctx.querySelector('.js-btn__showInfo');
 			this.__event(btn__showInfo, 'click');
 		}
 	},
 	__event: function __event(selector, type) {
 		//
 		selector.addEventListener(type, function (e) {
-
-			if (e.currentTarget.classList.contains("active")) {} else {}
 			if (~document.querySelector(".js-info").className.indexOf("anima")) {
-				e.currentTarget.classList.remove("active");
 				document.querySelector(".js-info").classList.remove("anima");
+				e.target.classList.remove("active");
 			} else {
-				e.currentTarget.classList.add("active");
 				document.querySelector(".js-info").classList.add("anima");
+				e.target.classList.add("active");
 			}
 		}, false);
 	}
