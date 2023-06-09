@@ -479,7 +479,7 @@ main {
 
 @media (min-width: 440px) {
   .info__container.anima {
-    --widthInfo: 50%;
+    --widthInfo: 90%;
   }
 }
 
@@ -508,7 +508,7 @@ main {
 
 @media (min-width: 440px) {
   .container {
-    width: 40vw;
+    width: 60vw;
   }
 }
 
