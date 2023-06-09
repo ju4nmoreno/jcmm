@@ -508,7 +508,7 @@ main {
 
 @media (min-width: 440px) {
   .container {
-    width: 60vw;
+    width: 80vw;
   }
 }
 
@@ -551,7 +551,7 @@ main {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url(../images/pattern.png);
+  background: url(images/pattern.png);
   box-shadow: inset 0 0 70vw 10vw #000000;
 }
 
