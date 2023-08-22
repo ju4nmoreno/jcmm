@@ -5,3 +5,4 @@ node_modules/*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+pnpm-lock.yaml
