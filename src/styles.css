@@ -394,12 +394,17 @@ main {
   width: 100%;
   opacity: 1;
   background-color: #000;
-  transition: width 1.5s 0.5s, opacity 1s 0.5s, background-color 1s 1.5s;
+  transition:
+    width 1.5s 0.5s,
+    opacity 1s 0.5s,
+    background-color 1s 1.5s;
 }
 .main__anima .container__text h2 {
   opacity: 1;
   letter-spacing: 3px;
-  transition: opacity 2s 6s, letter-spacing 2s 6s;
+  transition:
+    opacity 2s 6s,
+    letter-spacing 2s 6s;
 }
 .main__anima .container__text h3 {
   opacity: 0.3;
@@ -497,19 +502,14 @@ main {
   justify-content: space-between;
   margin: 0 auto;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
+  padding: 5%;
 }
 
 .container {
   width: 100%;
   padding-bottom: 1vw;
   border-bottom: 1px solid white;
-}
-
-@media (min-width: 440px) {
-  .container {
-    width: 80vw;
-  }
 }
 
 .container p {
